@@ -1,5 +1,10 @@
 def reverse_string(str)
-  # type your code in here
+ reverse = str.chars 
+ num = reverse.length 
+ new_string = ""
+ num.times { |i| new_string << reverse[num - i - 1] }
+
+  new_string
 end
 
 if __FILE__ == $PROGRAM_NAME
